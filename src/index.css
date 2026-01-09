@@ -1,0 +1,102 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* In index.css or App.css */
+@font-face {
+  font-family: 'Stefan'; /* Name you will use in your React components */
+  src: local('MyCustomFont'), 
+       url('./assets/fonts/ABCStefan-Simple-Trial.otf') format('opentype'); /* Path to your file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define other weights/styles if available (e.g., bold, italic) */
+@font-face {
+  font-family: 'Brixton';
+  src: local('MyCustomFont Bold'), 
+       url('./assets/fonts/Brixton_Wood_PERSONAL_USE_ONLY-Vector.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+/* In index.css or App.css */
+@font-face {
+  font-family: 'dirtyline'; /* Name you will use in your React components */
+  src: local('MyCustomFont'), 
+       url('./assets/fonts/dirtyline-36daysoftype-2022.otf') format('opentype'); /* Path to your file */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'playfairdisplay'; /* Name you will use in your React components */
+  src: local('MyCustomFont'), 
+       url('./assets/fonts/PlayfairDisplay-Black.ttf') format('truetype'); /* Path to your file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define other weights/styles if available (e.g., bold, italic) */
+@font-face {
+  font-family: 'restore';
+  src: local('MyCustomFont Bold'), 
+       url('./assets/fonts/Restore\ W00\ Heavy.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    /* overflow: hidden; */
+    background: #f5f5f0;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menuItemFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
