@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Menu from './components/Menu'
 import Projects from './components/Projects'
 import About from './components/About'
+import Plasma from './components/Plasma'
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState('home') // 'home' or 'works'
@@ -17,9 +18,17 @@ function App() {
 
   return (
     <>
+   <div className="fixed inset-0 z-0 pointer-events-none">
+        <Plasma 
+          color="#E85D4E"      // Matches your brand color
+          speed={0.5}           // Slower, more subtle
+          opacity={0.15}        // Very subtle so content is readable
+          mouseInteractive={false} // Disable interaction so it doesn't interfere
+        />
+      </div>
       {/* HOME PAGE */}
       {currentPage === 'home' && (
-        <div className="h-screen w-screen bg-[#f5f5f0] flex flex-col relative  ">
+        <div className="h-screen w-screen  flex flex-col relative  ">
           {/* Dotted Line Decoration */}
           <div 
             className="absolute left-0 right-0 top-20 h-px opacity-0" 

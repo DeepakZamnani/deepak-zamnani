@@ -1,280 +1,114 @@
+// Add these font imports to your index.html or main CSS file:
+// <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&display=swap" rel="stylesheet">
+// Or for Google Fonts API:
+// <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Anton&display=swap" rel="stylesheet">
+
 export default function About() {
-  const skills = [
-    'React & Next.js',
-    'Node.js & Express',
-    'UI/UX Design',
-    'TypeScript',
-    'Tailwind CSS',
-    'MongoDB & PostgreSQL',
-    'Figma & Adobe XD',
-    'REST APIs',
-    'Git & GitHub',
-    'Responsive Design',
-    'Performance Optimization',
-    'Web Accessibility'
-  ]
-
-  const experience = [
-    {
-      year: '2025',
-      role: 'Senior Full-Stack Developer',
-      company: 'Tech Innovators Inc.',
-      description: 'Leading development of scalable web applications, mentoring junior developers, and architecting solutions for enterprise clients.',
-      highlights: ['React', 'Node.js', 'AWS']
-    },
-    {
-      year: '2023',
-      role: 'Full-Stack Developer',
-      company: 'Creative Digital Studio',
-      description: 'Built responsive web applications, designed intuitive user interfaces, and collaborated with cross-functional teams.',
-      highlights: ['JavaScript', 'UI/UX', 'Agile']
-    },
-    {
-      year: '2021',
-      role: 'Frontend Developer',
-      company: 'StartUp Ventures',
-      description: 'Developed modern web interfaces, implemented design systems, and optimized application performance.',
-      highlights: ['React', 'CSS', 'Design']
-    }
-  ]
-
-  const stats = [
-    { number: '5+', label: 'Years Experience' },
-    { number: '50+', label: 'Projects Completed' },
-    { number: '30+', label: 'Happy Clients' },
-    { number: '100%', label: 'Dedication' }
-  ]
-
   return (
-    <div className="min-h-screen bg-[#f5f5f0] text-[#1a1a1a] relative overflow-y-auto">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 50px, #1a1a1a 50px, #1a1a1a 51px)',
-        }}></div>
-      </div>
-
-      {/* Hero Section */}
-      <div className="relative z-10 px-8 lg:px-16 pt-20 lg:pt-32 pb-16 lg:pb-24">
-        <div className="max-w-6xl mx-auto">
-          {/* Script Title */}
-          <div className="flex items-center justify-center gap-8 lg:gap-16 mb-16 lg:mb-20">
-            <span className="text-2xl lg:text-3xl text-[#D4AF37] opacity-40">✻</span>
-            <h1 
-              className="text-6xl lg:text-8xl text-[#D4AF37]"
-              style={{fontFamily: "'Allura', 'Dancing Script', cursive"}}
-            >
-              About Me
+    <div className="min-h-screen  pt-24 pb-16 flex items-center justify-center px-4">
+      {/* Centered Content Box */}
+      <div className="w-full max-w-4xl">
+        
+        {/* Main Content Box */}
+        <div className="bg-[#3a3835] px-8 md:px-16 py-12 md:py-16 relative">
+          
+          {/* Dotted Line Separator - Top */}
+          <div className="absolute top-0 left-0 right-0 border-t border-dotted border-[#8B7355] opacity-30"></div>
+          
+          {/* Header Section */}
+          <div className="text-center mb-12">
+            <p className="text-[#a89984] text-[10px] md:text-xs tracking-[0.3em] mb-3 font-light uppercase">ABOUT ME</p>
+            <h1 className="font-['Great_Vibes'] text-[#d4c5a9] text-4xl md:text-5xl leading-tight mb-2 font-normal">
+              Let's work together!
             </h1>
-            <span className="text-2xl lg:text-3xl text-[#D4AF37] opacity-40">✻</span>
-          </div>
-
-          {/* Main Content - Portrait + Bio */}
-          <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center mb-20 lg:mb-32">
-            {/* Portrait */}
-            <div className="w-full lg:w-2/5 flex justify-center">
-              <div className="relative">
-                {/* Gold border ring */}
-                <div className="absolute -inset-4 border-2 border-[#D4AF37] rounded-full opacity-30"></div>
-                <div className="absolute -inset-2 border border-[#D4AF37] rounded-full opacity-50"></div>
-                
-                {/* Portrait placeholder */}
-                <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-[#faf8f5] to-[#f0ede8] border border-[#D4AF37] shadow-xl flex items-center justify-center relative overflow-hidden">
-                  <div className="text-center">
-                    <div className="text-6xl lg:text-7xl font-black text-[#1a1a1a] opacity-10 mb-2">DZ</div>
-                    <p className="text-xs text-[#D4AF37] tracking-[0.3em] uppercase">Portrait</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Bio */}
-            <div className="w-full lg:w-3/5">
-              {/* Small label */}
-              <p className="text-xs tracking-[0.3em] uppercase text-[#D4AF37] mb-6">Introduction</p>
-              
-              {/* Name */}
-              <h2 className="text-4xl lg:text-5xl font-black uppercase tracking-tight text-[#1a1a1a] mb-6 leading-tight">
-                I'm Deepak<br/>Zamnani
-              </h2>
-
-              {/* Bio paragraphs */}
-              <div className="space-y-4 mb-8">
-                <p className="text-base lg:text-lg leading-relaxed text-[#4a4a4a]">
-                  A passionate full-stack developer and UI/UX designer crafting digital experiences that blend aesthetics with functionality. With over 5 years of experience, I transform ideas into elegant solutions.
-                </p>
-                <p className="text-base lg:text-lg leading-relaxed text-[#4a4a4a]">
-                  I believe in creating work that not only looks beautiful but also solves real problems. Every project is an opportunity to push boundaries and deliver excellence.
-                </p>
-              </div>
-
-              {/* CTA Button */}
-              <button className="px-8 py-3 border-2 border-[#D4AF37] text-[#1a1a1a] text-sm font-semibold tracking-[0.2em] uppercase rounded-full hover:bg-[#D4AF37] hover:text-white transition-all duration-300">
-                View Resume
-              </button>
-            </div>
-          </div>
-
-          {/* Divider */}
-          <div className="flex items-center justify-center gap-4 mb-20">
-            <div className="flex-1 h-px" style={{
-              backgroundImage: 'repeating-linear-gradient(to right, #D4AF37, #D4AF37 4px, transparent 4px, transparent 8px)',
-              opacity: 0.3
-            }}></div>
-            <span className="text-xs tracking-[0.3em] uppercase text-[#D4AF37]">2025</span>
-            <div className="flex-1 h-px" style={{
-              backgroundImage: 'repeating-linear-gradient(to right, #D4AF37, #D4AF37 4px, transparent 4px, transparent 8px)',
-              opacity: 0.3
-            }}></div>
-          </div>
-        </div>
-      </div>
-
-      {/* Stats Section */}
-      <div className="relative z-10 px-8 lg:px-16 py-16 lg:py-20 bg-[#faf8f5]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-5xl lg:text-6xl font-black text-[#1a1a1a] mb-3">
-                  {stat.number}
-                </div>
-                <div className="text-xs tracking-[0.2em] uppercase text-[#D4AF37]">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Skills Section */}
-      <div className="relative z-10 px-8 lg:px-16 py-20 lg:py-32">
-        <div className="max-w-6xl mx-auto">
-          {/* Section heading */}
-          <div className="text-center mb-16">
-            <p className="text-xs tracking-[0.3em] uppercase text-[#D4AF37] mb-4">What I Do</p>
-            <h2 className="text-6xl lg:text-8xl font-black uppercase tracking-tight text-[#1a1a1a] opacity-10 mb-8">
-              EXPERTISE
+            <h2 className="text-[#d4c5a9] text-4xl md:text-5xl font-black tracking-[-0.05em] leading-none" style={{fontFamily: "'Bebas Neue', 'Anton', sans-serif"}}>
+              DEEPAK ZAMNANI
             </h2>
           </div>
 
-          {/* Skills grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
-            {skills.map((skill, index) => (
-              <div 
-                key={index}
-                className="bg-[#fefdfb] border border-[#e8e6e3] hover:border-[#D4AF37] px-6 py-4 rounded-lg text-center transition-all duration-300 hover:shadow-md group"
-              >
-                <span className="text-sm font-medium text-[#1a1a1a] group-hover:text-[#D4AF37] transition-colors">
-                  {skill}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+          {/* Dotted Line Separator - Middle */}
+          <div className="w-full border-t border-dotted border-[#8B7355] opacity-30 my-10"></div>
 
-      {/* Experience Section */}
-      <div className="relative z-10 px-8 lg:px-16 py-20 lg:py-32 bg-[#faf8f5]">
-        <div className="max-w-6xl mx-auto">
-          {/* Section heading */}
-          <div className="text-center mb-20">
-            <p className="text-xs tracking-[0.3em] uppercase text-[#D4AF37] mb-6">My Journey</p>
-            <h2 
-              className="text-5xl lg:text-7xl text-[#D4AF37] mb-4"
-              style={{fontFamily: "'Allura', 'Dancing Script', cursive"}}
+          {/* Bio Section */}
+          <div className="max-w-2xl mx-auto mb-10">
+            <p className="text-[#d4c5a9] text-sm md:text-base leading-relaxed mb-4 text-center font-light">
+              I'm a full-stack developer and designer passionate about creating elegant, 
+              user-centered digital solutions. My approach combines technical expertise 
+              with a refined aesthetic sensibility.
+            </p>
+            <p className="text-[#a89984] text-xs md:text-sm leading-relaxed text-center font-light">
+              With a focus on modern web technologies and clean architecture, I build 
+              experiences that are both beautiful and functional.
+            </p>
+          </div>
+
+          {/* Skills Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <div className="text-center">
+              <h3 className="text-[#d4c5a9] text-sm md:text-base font-black mb-3 tracking-wider uppercase" style={{fontFamily: "'Bebas Neue', 'Anton', sans-serif"}}>
+                FRONTEND
+              </h3>
+              <p className="text-[#a89984] text-xs leading-relaxed font-light">
+                React · Next.js · TypeScript
+                <br />Vue.js · Tailwind CSS
+                <br />GSAP · Framer Motion
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-[#d4c5a9] text-sm md:text-base font-black mb-3 tracking-wider uppercase" style={{fontFamily: "'Bebas Neue', 'Anton', sans-serif"}}>
+                BACKEND
+              </h3>
+              <p className="text-[#a89984] text-xs leading-relaxed font-light">
+                Node.js · Express · Python
+                <br />Django · PostgreSQL
+                <br />MongoDB · REST APIs
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-[#d4c5a9] text-sm md:text-base font-black mb-3 tracking-wider uppercase" style={{fontFamily: "'Bebas Neue', 'Anton', sans-serif"}}>
+                TOOLS
+              </h3>
+              <p className="text-[#a89984] text-xs leading-relaxed font-light">
+                Git · Docker · AWS
+                <br />Figma · Adobe Suite
+                <br />Agile · CI/CD
+              </p>
+            </div>
+          </div>
+
+          {/* Dotted Line Separator - Bottom */}
+          <div className="w-full border-t border-dotted border-[#8B7355] opacity-30 my-10"></div>
+
+          {/* Contact CTA */}
+          <div className="text-center">
+            <p className="font-['Great_Vibes'] text-[#d4c5a9] text-3xl md:text-4xl mb-3 font-normal">
+              Let's work together
+            </p>
+            <a 
+              href="mailto:your.email@example.com" 
+              className="inline-block text-[#d4c5a9] text-3xl md:text-5xl font-black tracking-[-0.05em] leading-none hover:text-[#8B7355] transition-colors duration-300"
+              style={{fontFamily: "'Bebas Neue', 'Anton', sans-serif"}}
             >
-              Experience
-            </h2>
+              REACH OUT
+            </a>
           </div>
 
-          {/* Timeline */}
-          <div className="space-y-16 lg:space-y-20">
-            {experience.map((exp, index) => (
-              <div 
-                key={index}
-                className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-16 items-start`}
-              >
-                {/* Year marker */}
-                <div className="w-full lg:w-1/4 flex lg:justify-center">
-                  <div className="relative">
-                    <div className="text-6xl lg:text-7xl font-black text-[#1a1a1a] opacity-5">
-                      {exp.year}
-                    </div>
-                    <div className="absolute top-1/2 left-0 w-3 h-3 bg-[#D4AF37] rounded-full -translate-y-1/2"></div>
-                  </div>
-                </div>
+          {/* Dotted Line Separator - Bottom Edge */}
+          <div className="absolute bottom-0 left-0 right-0 border-b border-dotted border-[#8B7355] opacity-30"></div>
+        </div>
 
-                {/* Content */}
-                <div className="w-full lg:w-3/4">
-                  <div className="bg-white border-l-4 border-[#D4AF37] rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-                    <h3 className="text-2xl lg:text-3xl font-bold text-[#1a1a1a] mb-2">
-                      {exp.role}
-                    </h3>
-                    <p className="text-sm tracking-wide text-[#D4AF37] mb-4 uppercase">
-                      {exp.company}
-                    </p>
-                    <p className="text-base leading-relaxed text-[#4a4a4a] mb-6">
-                      {exp.description}
-                    </p>
-                    
-                    {/* Highlights */}
-                    <div className="flex flex-wrap gap-2">
-                      {exp.highlights.map((highlight, i) => (
-                        <span 
-                          key={i}
-                          className="px-3 py-1 border border-[#D4AF37] text-[#D4AF37] text-xs rounded-full"
-                        >
-                          {highlight}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+        {/* Footer Info */}
+        <div className="flex flex-col md:flex-row justify-between items-center mt-6 text-[#a89984] text-[10px] md:text-xs gap-3">
+          <div>
+            <span className="opacity-60">Available for freelance — 2025</span>
           </div>
-        </div>
-      </div>
-
-      {/* Philosophy Section */}
-      <div className="relative z-10 px-8 lg:px-16 py-20 lg:py-32">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 
-            className="text-5xl lg:text-7xl text-[#D4AF37] mb-8"
-            style={{fontFamily: "'Allura', 'Dancing Script', cursive"}}
-          >
-            My Approach
-          </h2>
-          
-          <p className="text-lg lg:text-xl leading-relaxed text-[#4a4a4a] mb-6">
-            I believe in the power of <span className="text-[#D4AF37] font-semibold">simplicity</span> and <span className="text-[#D4AF37] font-semibold">thoughtful design</span>. Every line of code, every pixel matters. My goal is to create experiences that feel effortless yet deliver exceptional results.
-          </p>
-          
-          <p className="text-base lg:text-lg leading-relaxed text-[#4a4a4a]">
-            Collaboration, continuous learning, and attention to detail are the pillars of my work philosophy.
-          </p>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="relative z-10 px-8 lg:px-16 py-20 lg:py-32 bg-[#faf8f5]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h3 
-            className="text-5xl lg:text-7xl text-[#D4AF37] mb-6"
-            style={{fontFamily: "'Allura', 'Dancing Script', cursive"}}
-          >
-            Let's create together
-          </h3>
-          <p className="text-sm tracking-[0.3em] uppercase text-[#1a1a1a] opacity-60 mb-12">
-            Ready to bring your ideas to life?
-          </p>
-          <button className="px-12 py-4 border-2 border-[#D4AF37] text-[#1a1a1a] text-sm font-bold tracking-[0.2em] uppercase rounded-full hover:bg-[#D4AF37] hover:text-white transition-all duration-300 hover:scale-105 shadow-lg">
-            Get In Touch
-          </button>
+          <div className="flex gap-4 md:gap-5">
+            <a href="#" className="hover:text-[#d4c5a9] transition-colors duration-200 tracking-wide">LINKEDIN</a>
+            <a href="#" className="hover:text-[#d4c5a9] transition-colors duration-200 tracking-wide">GITHUB</a>
+            <a href="#" className="hover:text-[#d4c5a9] transition-colors duration-200 tracking-wide">BEHANCE</a>
+          </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
